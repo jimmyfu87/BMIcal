@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity
             EditText fieldheight = (EditText) findViewById(R.id.height);
             EditText fieldweight = (EditText) findViewById(R.id.weight);
             //身高
+            //Stasg
             double heighting = Double.parseDouble(fieldheight.getText().toString()) / 100;
             //體重
             double weighting = Double.parseDouble(fieldweight.getText().toString());
