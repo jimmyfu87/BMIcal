@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity
             double BMI = weighting/ (heighting * heighting);
             String Bstring=String.valueOf(BMI);
             //結果出來了
-            TextView result = (TextView) findViewById(R.id.result);
-            result.setText(Bstring);
+            TextView resulting = (TextView) findViewById(R.id.result);
+            resulting.setText(Bstring);
         }
     };
 }
