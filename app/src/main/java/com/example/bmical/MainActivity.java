@@ -30,11 +30,11 @@ public class MainActivity extends AppCompatActivity
             //身高
             double height = Double.parseDouble(fieldheight.getText().toString()) / 100;
             //體重
-            double weight = Double.parseDouble(fieldweight.getText().toString());
+            double weighting = Double.parseDouble(fieldweight.getText().toString());
             //計算出BMI值
-            double BMI = weight/ (height * height);
+            double BMI = weighting/ (height * height);
             String Bstring=String.valueOf(BMI);
-            //結果
+            //結果出來了
             TextView result = (TextView) findViewById(R.id.result);
             result.setText(Bstring);
         }
