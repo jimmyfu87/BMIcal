@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity
             //結果出來了
             TextView resulting = (TextView) findViewById(R.id.result);
             resulting.setText(Bstring);
-            //PULL
+            //PULLING
         }
     };
 }
