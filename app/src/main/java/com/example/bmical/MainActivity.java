@@ -28,11 +28,11 @@ public class MainActivity extends AppCompatActivity
             EditText fieldheight = (EditText) findViewById(R.id.height);
             EditText fieldweight = (EditText) findViewById(R.id.weight);
             //身高
-            double height = Double.parseDouble(fieldheight.getText().toString()) / 100;
+            double heighting = Double.parseDouble(fieldheight.getText().toString()) / 100;
             //體重
             double weighting = Double.parseDouble(fieldweight.getText().toString());
             //計算出BMI值
-            double BMI = weighting/ (height * height);
+            double BMI = weighting/ (heighting * heighting);
             String Bstring=String.valueOf(BMI);
             //結果出來了
             TextView result = (TextView) findViewById(R.id.result);
