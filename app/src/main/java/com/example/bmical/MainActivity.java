@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity
             TextView resulting = (TextView) findViewById(R.id.result);
             resulting.setText(Bstring);
             //PULLING
+            // FUCK
         }
     };
 }
