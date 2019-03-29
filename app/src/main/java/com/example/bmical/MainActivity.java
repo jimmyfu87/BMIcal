@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity
             resulting.setText(Bstring);
             //PULLING
 
+            //Here
         }
     };
 }
