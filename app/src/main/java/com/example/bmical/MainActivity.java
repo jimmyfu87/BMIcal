@@ -28,15 +28,21 @@ public class MainActivity extends AppCompatActivity
             EditText fieldheight = (EditText) findViewById(R.id.height);
             EditText fieldweight = (EditText) findViewById(R.id.weight);
             //身高
-            double heighting = Double.parseDouble(fieldheight.getText().toString()) / 100;
+            double height = Double.parseDouble(fieldheight.getText().toString());
+            double heighting = height / 100;
             //體重
             double weighting = Double.parseDouble(fieldweight.getText().toString());
             //計算出BMI值
             double BMI = weighting/ (heighting * heighting);
             String Bstring=String.valueOf(BMI);
             //結果出來了
+            sqlite mySQLiteDB = new sqlite(MainActivity.this);
+            //寫入資料庫欄位資訊
+            mySQLiteDB.insert("小黑人",(int)height,(int)weighting,"電話號碼","小黑人的Android教室");
+            mySQLiteDB.close();
             TextView resulting = (TextView) findViewById(R.id.result);
             resulting.setText(Bstring);
+
             //PULLING
 
             //Here
